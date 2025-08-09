@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Input Tags.</title>
+</head>
+<body>
+    <form action="" method="">
+        <!-- Input tags. They are self-closing.-->
+        <input type="text"/> <!-- Takes a text as input.-->   
+        <br/> <!-- Puts next item ona new line.-->
+        <input type="number"/> <!-- Takes a number as input-->
+        <br/>
+        <input type="password"/> <!-- Hides password.-->
+        <br/>
+        <input type="date"/> <!-- For date.-->
+        <br/>
+        <input type="time"/> <!-- For time.-->
+        <br/>
+        <input type="submit"/> <!-- Submit button.-->
+        <br/>
+        <label> Are you a boy?</label>
+        <input type="radio"/> <!-- Radio button.-->
+        <br/>
+        <label> Are you sure?</label>
+        <input type="checkbox"/> <!-- Checkbox button-->
+        <br/>
+
+        <!-- Common Input HTML Attributes.-->
+        <p>
+            <h1>Information.</h1>
+            <form action="" method="">
+                <input type="text" value="Enter your name: " placeholder="Evan"/> <!-- value : is used to add some text to input box. placeholder : is used to provide some hint to the user.-->
+                <br/>
+                <label> Enter you age: </label> <!-- Used to add context to you content.-->
+                <input type="number" min="18" max="21"/> <!-- max : value can't exceed this. min : value can't be less than this.-->
+                <br/>
+                <input type="text" value="12345" readonly/> <!-- readonly : user can't edit this field.-->
+                <br/>
+                <input type="text" value="Admin: Evan" hidden/> <!-- hidden : user can't see this field.-->
+                <br/>
+            </form>
+        </p>
+
+        <!-- To create a drop down.-->
+         <label> Choose you Favourite Colour.</label>
+         <select>
+            <option> Blue </option>
+            <option> Green </option>
+            <option> Red </option>
+         </select>
+    </form>
+</body>
+</html>

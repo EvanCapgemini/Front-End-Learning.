@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table tags.</title>
+</head>
+<body>
+    <!-- Table is divided into 3 parts: Header, Body and Footer.-->
+     <!--
+    td holds the data entered for each row.
+    tr indicates new row.
+    border : an attribute to add thickness.
+    width : to create spaces within each column.
+    cellspacing : to remove(0) or to create more space between each data border block.
+    align : used to arrange data within each cell block.
+     -->
+    <table border="1" width="300" cellspacing="0">
+        <thead align="center"> <!-- Header for each column.-->
+            <tr>
+                <td> Country </td>
+                <td> Population(in number) </td>
+            </tr>
+        </thead>
+        <tbody> <!-- Actual data for each column.-->
+            <tr>
+                <td>India</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Japan</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- Sum Total or Over-view of table.-->
+            <tr>
+                <td>World</td>
+                <td>150</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
