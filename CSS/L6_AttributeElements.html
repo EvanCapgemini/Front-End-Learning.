@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Elements.</title>
+    <style>
+        /* ^="" means search for string in "" and add these styles to it */
+        a[href^="http"]{
+            color: red;
+        }
+        input[type="text"]{
+            background-color: blue;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <a href="#####"> Link 1</a>
+    <a href="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"> Bunny </a>
+    <a href="#####"> Link 2</a>
+    <a href="#####"> Link 3</a>
+    <br>
+    <input type="text" placeholder="Enter name say Evan"/>
+    <input type="password" placeholder="String password 12 characters."/>
+</body>
+</html>

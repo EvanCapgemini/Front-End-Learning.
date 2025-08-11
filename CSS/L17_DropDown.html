@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down.</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropcont{
+            display: none;
+            position: absolute;
+            z-index: 1;
+            left: 30px;
+            box-shadow: 0px 8px 16px 0px color(grey red green blue);
+            padding: 20px;
+            width: 100px;
+        }
+        .dropdown:hover .dropcont{
+            display: block;
+        }
+        .dropbtn{
+            border: none;
+            padding: 20px;
+            background-color: green;
+            color: black;
+            font-weight: 500;
+            margin: 20px;
+        }
+        .a{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Drop</button>
+        <div class="dropcont">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+        </div>
+    </div>
+</body>
+</html>

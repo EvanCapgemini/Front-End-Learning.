@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements.</title>
+    <style>
+        /* p{
+            content:''; /* Associated with before or after pseudo element attributes.
+            border:none;
+            display: block; /* Makes the content behave like a block level element.*/
+            /* width:auto;
+            height:auto;
+            background-color: blue;
+            color: white; */
+        /* } */
+
+        /*Applied to contents attribute only, thats why before.*/
+        /* p::before{
+            content:'Hi';
+            border: none;
+            display:block;
+            width: auto;
+            height: auto;
+            background-color: blue;
+            color: white;
+        } */
+
+        /*Similarly we have ::after*/
+
+        /*Highlighting a line in the whole web-page*/
+        .pcss::first-line{
+            background-color: red;
+        }
+
+        /*Similarly we have ::first-letter*/
+    </style>
+</head>
+<body>
+    <div> Welcome human.</div>
+    <p> Hello there wooohooo!!!</p>
+    <p class="pcss"> My name is Evan. I am working at CapG. Having a wonderful experience learning CSS.
+        What a lovely weather.
+    </p>
+</body>
+</html>

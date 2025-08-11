@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class Selector</title>
+    <style>
+        /*Simply when you hover over this button the color of box changes.*/
+        button:hover{
+            color:azure;
+            background-color: red;
+        }
+        /*Here when you have the button pressed, its colour would change.*/
+        button:active{
+            color: black;
+            background-color: blue;
+        }
+        /* This can only be used with links/URLs. It tells you if a particular link has been visited or not.*/
+        a:visited{
+            color: red;
+        }
+        /* When you click on the input box, the colour of the box changes.*/
+        input:focus{
+            color: black;
+            background-color: red;
+        }
+        /*When using child methods such as nth first etc. it takes into consideration all h1 tags in your code.*/
+        /*nth child works by using () to enter which child no. to add the attribute to and also n stands for number of times. Here 2n means even no's of h1 tag*/
+        /* div h1:nth-child(2n){
+            background-color: blue;
+        } */
+        /* Takes very first occurence of h1. Note: if div not put at the start, the "This is a random button" gets highlighted.*/
+        /* div h1:first-child{
+            background-color: blue;
+        }  */
+
+        /*Similarly there is a last-child*/
+    </style>
+</head>
+<body>
+    <h1>This is a random button.</h1>
+    <button>Click me!!!</button>
+    <br/>
+    <a href="#####">
+        Don't click this it will turn red.
+    </a>
+    <br/>
+    <input type="text" placeholder="Enter Name say Evan."/>
+    <br/>
+    <div>
+        <h1>Hello</h1>
+        <h1>Hi</h1>
+        <h2>Live</h2>
+        <h1>BBC news</h1>
+        <h4>Friday night.</h4>
+    </div>
+</body>
+</html>

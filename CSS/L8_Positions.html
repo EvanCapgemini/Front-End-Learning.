@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        div{
+            background-color: red;
+            height: 50px;
+        }
+        #next{
+            color: black;
+            background-color: yellow;
+            opacity: 0.5;
+            height: 50px;
+            /*position: relative; Goes to new position not overlapping the first.*/
+            position: absolute; /*Ensures that width remains the same as the text inside, without taking additional space.*/
+            /*Relative will adjust with respect to the parent.*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hello there Human. <!--Static means default position to display html elements.-->
+    </div>
+    <div id="next">
+        How are you?
+    </div>
+</body>
+</html>

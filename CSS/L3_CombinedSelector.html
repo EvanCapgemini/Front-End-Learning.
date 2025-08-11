@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Selector.</title>
+    <style>
+        /* div h1{
+            color: blue;
+        } */
+        /* div > h1{
+            color: blue;
+        } */
+        /* h1 + h2{
+            color: blue;
+        } */
+        h1 ~ h2{
+            color: blue;
+         }
+    </style>
+</head>
+<body>
+    <!-- It explains the relationship between selectors.-->
+    <!-- Combined selectors only work with div tag.-->
+    <!-- Descendent selector-->
+    <!-- <div>
+        <h1>Hello there</h1>
+        <h2>How are you?</h2>
+        <section>
+            <h1>I am fine.</h1>
+            <h2>Maybe.</h2>
+        </section>
+    </div>
+    <h1>I am fine.</h1> -->
+
+    <!-- Child selector-->
+    <!-- Only takes into consideration the direct children. Syntax: > -->
+    <!-- <div>
+        <h1>Hello there</h1>
+        <h2>How are you?</h2>
+        <section>
+            <h1>I am fine.</h1>
+            <h2>Maybe.</h2>
+        </section>
+    </div> -->
+
+    <!-- Adjacent sibling selector-->
+    <!-- This will select the very first sibling of that particular tag. Here h1's first sibling. Syntax + -->
+    <!-- <div>
+        <h1> Hello </h1>
+        <h2> Hi </h2>
+        <h1> There </h1>
+        <h2> My name is ... </h2>
+        <h2> Evan </h2>
+     </div> -->
+
+    <!-- General sibling selector-->
+    <!-- This will select all siblings. Here h1's all siblings that are h2. Syntax: ~ -->
+     <div>
+        <h1> Hello </h1>
+        <h2> Hi </h2>
+        <h1> There </h1>
+        <h2> My name is ... </h2>
+        <h2> Evan </h2>
+     </div>
+</body>
+</html>
